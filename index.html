@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cancel your membership</title>
   </head>
   <body>
     <div class="cancelContainer">
-      <form>
+      <form id="cancelMembership">
         <div class="cancelOne">
         <h1>Cancel your membership</h1>
         <p class="cancel">
@@ -30,13 +30,13 @@
             <option value="tooMany">Too many newsletters</option>
           </select>   
             <p class="messagePrompt">Feel free to provide further feedback on what I can do to improve my newsletter for future customers!  <em>(Optional)</em></p>
-            <textarea id="optionalMessage" ></textarea>
+            <textarea id="optionalMessage"  maxLength="500"></textarea>
         </div>
          
           </label>
         </label>
         </form>
-        <button class="submit">Submit</button>
+        <button id="submit">Submit</button>
       </div>
    
       
